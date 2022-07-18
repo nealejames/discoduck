@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Getting to Know You" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  </head>
+    
+<div class="container">
+    <body>
+        <h1 id="title" class="text-center">Getting to Know You</h1>
+        <p id="description" class="description text-center">Thank you for telling me more about yourself!
+        </p>
+ <!-- BEGIN INPUT FIELDS FOR NAME, EMAIL, AGE-->   
+    <form id="survey-form"> 
+        <div class="form-group"> 
+            <label id="name-label" for="name">Name 
+            </label>
+            <input id="name" type="text" name="name" class="form-control" placeholder="Enter you name" required /> 
+        </div>  
+        <div class="form-group"> 
+            <label id="email-label" for="email">Email 
+            </label>
+            <input id="email" type="email" type="text" name="email" class="form-control" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group"> 
+            <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Enter your age" />
+        </div> 
+<!-- DROPDOWN FOR GENDER IDENTITY -->
+        <div class="form-group"> 
+            <p>Which option best describes your gender identity?</p>
+            <select id="" name="" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+                <option value="transgender">Transgender</option>
+                <option value="other">Other</option>
+                <option value="nosay">Prefer not to say</option>
+            </select>
+        </div>
+<!-- RADIO BUTTONS FOR PATRIARCHY -->
+        <div class="form-group"> 
+            <p>Would you like the patriarchy to be dismantled?</p>
+            <label>
+                <input name="patriarchy" value="absolutely" type="radio" class="input-radio" required/>Absolutely!
+            </label>
+            <label>
+                <input name="patriarchy" value="Maybe" type="radio" class="input-radio" />Maybe
+            </label>
+            <label>
+                <input name="patriarchy" value="noway" type="radio" class="input-radio" />No way!
+            </label>
+            <label>
+                <input name="patriarchy" value="Not sure" type="radio" class="input-radio" />Not sure
+            </label>
+        </div>
+<!-- DROPDOWN FOR LOVE LANGUAGE -->
+        <div class="form-group"> 
+            <p>What is your #1 Love Language?</p>
+            <select id="love-language" name="lovelanguage" class="form-control" required>
+                <option disabled selected value>Choose one</option>
+                <option value="words">Words of Affirmation</option>
+                <option value="touch">Physical Touch</option>
+                <option value="gifts">Receiving Gifts</option>
+                <option value="time">Quality Time</option>
+                <option value="service">Acts of Service</option>
+                <option value="tacos">Tacos</option>
+                <option value="unsure">Not Sure</option>
+            </select>
+        </div>
+<!-- CHECKBOXES FOR ACTIVITIES -->
+        <div class="form-group"> 
+            <p>What activities do you enjoy? <span class="clue">(check all that apply)</span></p>
+            <label>
+                <input name="activity" value="movies" type="checkbox" class="input-checkbox" />Movies / TV
+            </label>
+            <label>
+                <input name="activity" value="exercise" type="checkbox" class="input-checkbox" />Exercise
+            </label>
+            <label>
+                <input name="activity" value="Travel" type="checkbox" class="input-checkbox" />Travel
+            </label>
+            <label>
+                <input name="activity" value="sports" type="checkbox" class="input-checkbox" />Sports
+            </label>
+            <label>
+                <input name="activity" value="reading" type="checkbox" class="input-checkbox" />Reading
+            </label>
+            <label>
+                <input name="activity" value="dining out" type="checkbox" class="input-checkbox" />Dining out
+            </label>
+            <label>
+                <input name="activity" value="sleeping" type="checkbox" class="input-checkbox" />Sleeping
+            </label>
+            <label>
+                <input name="activity" value="hiking" type="checkbox" class="input-checkbox" />Hiking
+            </label>
+            <label>
+                <input name="activity" value="camping" type="checkbox" class="input-checkbox" />Camping / Backpacking
+            </label>
+            <label>
+                <input name="activity" value="swimming" type="checkbox" class="input-checkbox" />Swimming
+            </label>
+            <label>
+                <input name="activity" value="more" type="checkbox" class="input-checkbox" />And so much more...
+            </label>
+        </div>
+<!-- TEXTAREA FOR ADDITIONAL INFO -->
+        <div class="form-group"> 
+            <p>What else should I know about you?</p>
+            <textarea id="more-info" class="input-textarea" name="more-info" value="more-info" placeholder= "Tell me more..."></textarea>
+        </div>
+<!-- SUMBIT BUTTON -->
+        <div class="form-group"> 
+            <input type="submit" value="Submit" class="submit-button" />
+        </div>
+
+    </form>
+    </body>
+</div>
+</html>
+
+      
+    
